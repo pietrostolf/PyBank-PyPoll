@@ -6,7 +6,7 @@ data = []
 
 
 
-budget_csv = os.path.join("PyBank","Resources","budget_data.csv")
+budget_csv = os.path.join("Resources","budget_data.csv")
 
 
 with open(budget_csv, 'r', encoding='utf-8') as csvfile:
