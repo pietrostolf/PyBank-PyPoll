@@ -13,10 +13,8 @@ budget_csv = os.path.join("Resources","election_data.csv")
 
 #open csv file
 with open(budget_csv, 'r', encoding='utf-8') as csvfile:
-    csvreader = csv.reader(csvfile)
-
-#ignore first line    
-    next(csvfile)
+    csvreader = csv.reader(csvfile)  
+    header = next(csvreader)
 
 #iterate through csv rows to find votes counts   
     for row in csvreader:

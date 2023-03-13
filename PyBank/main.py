@@ -16,7 +16,7 @@ with open(budget_csv, 'r', encoding='utf-8') as csvfile:
     csvreader = csv.reader(csvfile)
     monthcount = 0
     net = 0
-    next(csvfile)
+    header = next(csvreader)
 
 #iterate through csv rows and find results
     for row in csvreader:
